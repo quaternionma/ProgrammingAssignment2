@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
                 return(inv)
         }
         data <- x$get()
-        inverse <- solve(data)
-        x$setinverse(inverse)
-        inverse #changing inv to inverse was the crucial point
+        inv <- solve(data)
+        x$setinverse(inv)
+        inv
 }
